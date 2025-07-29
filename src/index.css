@@ -8,14 +8,9 @@
 	src: url('/fonts/NotoColorEmoji.ttf') format('truetype');
 }
 
-* {
-	font-family:
-		'NotoEmoji', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Roboto',
-		sans-serif;
-}
 :root {
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
+	line-height: 1;
 	font-weight: 400;
 
 	color-scheme: light dark;
