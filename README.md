@@ -17,7 +17,7 @@
 | API 통신    | RESTful API 기반, Axios 래퍼 사용 |
 | 타입 시스템 | TypeScript                        |
 | 테스트      | Vitest (단위) / StoryBook v9      |
-| 배포 환경   | Vercel / Firebase Hosting 등      |
+| 배포 환경   | AWS S3 / Cloud Front              |
 
 ---
 
@@ -107,6 +107,16 @@ yarn build:storybook
 | enum / 상수     | `USER_ROLE`, `ERROR_MESSAGE`            |
 
 > 📌 전체 네이밍 규칙은 팀 컨벤션 문서에 상세 명시됨
+
+---
+
+## 환경 변수
+
+#### 환경 변수는 프로젝트의 Root의 위치하여 사용합니다.
+
+- .env.development
+- .env.local
+- .env.production
 
 ---
 
