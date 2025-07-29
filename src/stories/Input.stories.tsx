@@ -1,20 +1,7 @@
-import {
-	AlertDialog,
-	AlertDialogAction,
-	AlertDialogCancel,
-	AlertDialogContent,
-	AlertDialogDescription,
-	AlertDialogFooter,
-	AlertDialogHeader,
-	AlertDialogTitle,
-	AlertDialogTrigger,
-} from '@/components/ui/alert-dialog';
-import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { cn } from '@/lib/utils';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-const meta: Meta<typeof AlertDialog> = {
+const meta: Meta<typeof Input> = {
 	title: 'Atom/Input',
 	component: Input,
 	parameters: {
@@ -37,50 +24,40 @@ export default meta;
 
 export const Default: StoryObj<typeof Input> = {
 	args: {
-		placeholder: 'Input',
+		placeholder: 'PlaceHolder',
 	},
 };
 
-// export const CustomAlert: StoryObj<CustomArgs> = {
-// 	args: {
-// 		title: 'Alert Title',
-// 		description: 'Alert description',
-// 		backgroundColor: 'bg-white',
-// 	},
-// 	argTypes: {
-// 		backgroundColor: {
-// 			control: 'select',
-// 			options: [
-// 				'bg-white',
-// 				'bg-red-500',
-// 				'bg-blue-500',
-// 				'bg-green-500',
-// 				'bg-yellow-500',
-// 				'bg-purple-500',
-// 				'bg-pink-500',
-// 				'bg-orange-500',
-// 				'bg-gray-500',
-// 				'bg-black',
-// 			],
-// 		},
-// 	},
-// 	render: ({ title, description, backgroundColor }) => (
-// 		<AlertDialog>
-// 			<AlertDialogTrigger>
-// 				<Button>Show Dialog</Button>
-// 			</AlertDialogTrigger>
-// 			<AlertDialogContent className={cn(backgroundColor)}>
-// 				<AlertDialogHeader>
-// 					{title && <AlertDialogTitle>{title}</AlertDialogTitle>}
-// 					{description && (
-// 						<AlertDialogDescription>{description}</AlertDialogDescription>
-// 					)}
-// 				</AlertDialogHeader>
-// 				<AlertDialogFooter>
-// 					<AlertDialogCancel>Cancel</AlertDialogCancel>
-// 					<AlertDialogAction>Action</AlertDialogAction>
-// 				</AlertDialogFooter>
-// 			</AlertDialogContent>
-// 		</AlertDialog>
-// 	),
-// };
+export const NumberInput: StoryObj<typeof Input> = {
+	args: {
+		placeholder: 'Number',
+		type: 'number',
+	},
+};
+
+export const PasswordInput: StoryObj<typeof Input> = {
+	args: {
+		placeholder: 'Password',
+		type: 'password',
+	},
+};
+
+export const SearchInput: StoryObj<typeof Input> = {
+	args: {
+		placeholder: 'Search',
+		type: 'search',
+	},
+};
+
+export const DisabledInput: StoryObj<typeof Input> = {
+	args: {
+		placeholder: 'Disabled',
+		disabled: true,
+	},
+};
+
+export const ErrorInput: StoryObj<typeof Input> = {
+	args: {
+		className: 'border-destructive',
+	},
+};
