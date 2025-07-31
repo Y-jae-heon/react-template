@@ -50,27 +50,15 @@ yarn build:storybook
 
 ```bash
 /src
+  /apis
   /assets
   /components            # 전역 UI (Atomic Design 기준)
-    # /atoms
-    # /molecules
-    # /organisms
-    # /templates
+    /atoms
+    /molecules
+    /organisms
+    /templates
     /ui                 # UI Kit 래핑 (shadcn, Radix 등)
-
-  /features              # 기능(Domain) 단위 (DDD 기반)
-    /user
-      /components        # 도메인 내부 컴포넌트
-      /api               # API 모듈 (fetch 중심)
-      /services          # 유즈케이스 / 상태 기반 서비스
-      /hooks             # 비즈니스 훅
-      /pages             # 도메인 페이지 단위
-    /shared
-      /components
-      /api
-      /services
-      /hooks
-      /pages            # 공용 도메인
+  /pages
   /layouts               # AppShell / Layout 단위
   /store                 # 글로벌 상태 저장소 (Zustand)
   /lib                   # 공통 유틸, 포맷터, 날짜 등
