@@ -131,6 +131,7 @@ yarn build:storybook
 - [팀 아키텍처 가이드](./docs/architecture-guide.md)
 - [컴포넌트 설계 기준표](./docs/component-standard.md)
 - [도메인 분리 기준 체크리스트](./docs/domain-split-checklist.md)
+- [네이밍 컨벤션 가이드](https://www.notion.so/slogup/Naming-Convention-238e63c6fa9780159c43d4ac8d32625e?source=copy_link)
 - [PR & 코드리뷰 규칙](./docs/pr-review.md)
 
 ---

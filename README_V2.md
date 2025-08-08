@@ -59,7 +59,6 @@ yarn build:storybook
     /templates
     /ui                 # UI Kit 래핑 (shadcn, Radix 등)
   /pages
-  /layouts               # AppShell / Layout 단위
   /store                 # 글로벌 상태 저장소 (Zustand)
   /lib                   # 공통 유틸, 포맷터, 날짜 등
   /types                 # 전역 타입
